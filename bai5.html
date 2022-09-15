@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lãi suất ngân hàng</title>
+</head>
+<body>
+<script>
+  let p = parseFloat((prompt("Nhập vốn ban đầu")))
+  let lendingMonths = parseInt(prompt("Vui lòng nhập số tháng cho vay"))
+
+  let rate = parseFloat(prompt("Lãi suất hàng tháng"))
+
+  let result = p * (1 + rate/12)* lendingMonths
+  document.write(result)
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let quantity = parseInt(prompt("vui lòng nhập độ dài của dãy Fibonacci bạn mong muốn"))
+    let n1 = 0, n2 = 1, nextValue;
+    let result = "1" + "<br>"
+
+    for (let i = 0; i < quantity; i++) {
+        nextValue = n1 + n2;
+        n1 = n2;
+        n2 = nextValue;
+
+        result += nextValue + "<br>"
+    }
+
+    document.write(result)
+</script>
+</body>
+</html>

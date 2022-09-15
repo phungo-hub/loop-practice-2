@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let length = parseInt(prompt("Nhập chiều dài"));
+  let width = parseInt(prompt("Nhập chiều rộng"));
+  let string = "<pre>";
+
+  for (i = 0; i < width; i++) {
+    for (j = 0; j < length; j++) {
+      if (i === 0 || i === (width-1)) {
+        string += "*"
+      } else {
+        if (j === 0 || j === (length-1)) {
+          string += "*"
+        } else {
+          string += " "
+        }
+      }
+    }
+    string += "<br>"
+  }
+  string += "</prev>"
+  document.write(string)
+</script>
+</body>
+</html>

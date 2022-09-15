@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giai thừa</title>
+</head>
+<body>
+<h1>Giai thừa</h1>
+<script>
+  let num = parseInt(prompt("vui lòng nhập số để tính giai thừa"));
+  let nextValue;
+  let result = 1
+  for (let i = num; i >= 1; i--) {
+    if (num % 2 === 0) {
+        if (num === 0) {
+            break;
+        }
+    } else {
+        if (num === 1) {
+            break;
+        }
+    }
+
+    nextValue = num * (num-1)
+    result *= nextValue
+    console.log(result)
+    num=num-2
+  }
+  document.write(result)
+</script>
+</body>
+</html>
